@@ -1,0 +1,10 @@
+{
+  "repository": "NDDev-OpenNetwork/rldyour-sysinfo",
+  "release": "v0.3.1",
+  "linux_asset": "rldyour-sysinfo-0.3.1-x86_64-linux.tar.gz",
+  "sha256": "ce80fe802d5ccd64f12fe7660ef11c4bdb9a2a4df3b7d20bbda3e0450d92a5e3",
+  "executables": {
+    "NDS_TEST_SYSINFO_DAEMON": "rldyour-sysinfod"
+  },
+  "size": 260171
+}
