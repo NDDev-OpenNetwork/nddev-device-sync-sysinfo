@@ -1,0 +1,42 @@
+schema_version: 1
+repository:
+  id: "repo_01M4R3MH217GDZ3BZE3NADEDHY"
+  display_name: "nddev-device-sync-sysinfo"
+  roles:
+    - "project"
+  lifecycle: "active"
+provider:
+  type: "github"
+  installation: "installation:github-opennetwork"
+  repository_id: 1412571017
+  owner: "NDDev-OpenNetwork"
+  name: "nddev-device-sync-sysinfo"
+classification:
+  portfolios:
+    - "portfolio:nddev-opennetwork"
+  visibility_contract: "public"
+  data_classification: "public"
+product:
+  purpose: "AGPL-3.0-only NDS adapter. Reads CPU, memory, GPU, disk and network samples from the native daemon; missing readings remain null."
+  capabilities:
+    - "Native hardware/system sampling (CPU, memory, GPU, disk, network)"
+    - "Null-preserving semantics for missing readings"
+policy:
+  profiles:
+    - "repository-default"
+    - "opennetwork-default"
+  rollout_ring: "standard"
+git:
+  default_branch: "main"
+  integration: "pull-request"
+  branch_model: "task-branches"
+  handoff_pr: "preferred"
+  cleanup: "merged-only"
+agent:
+  context_profile: "project-default"
+  generated_agents: false
+  serena:
+    enabled: false
+    provenance_required: false
+release:
+  mode: "none"
